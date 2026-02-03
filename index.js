@@ -1,6 +1,5 @@
-// You have to write a Node.js program to clear clutter inside of a directory and organize the contents of that directory into differnt folders
-
-// for example, these files become:
+// Clutter Clearance - Node.js Directory Organizer
+// This script organizes files in a directory into folders based on file extensions
 
 // 1. name.jpg
 // 2  name.png
@@ -40,5 +39,6 @@ for (const item of files) {
             fs.rename(path.join(basepath, item), path.join(basepath, ext, item))
         }
     }
+
 
 }
